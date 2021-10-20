@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap");
+
+body {
+  font-family: "Comfortaa", cursive;
+  font-weight: 300;
+  
+  background-color: #fffdf9;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.question-container {
+  border: 0.1px solid rgb(0 0 0 / 20%);
+  margin-top: 5vh;
+  height: 20vh;
+  width: 30vw;
+
+  text-align: center;
+
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-weight: 700;
+  font-size: auto;
+  box-shadow: 0px 1px 2px rgb(0 0 0 / 20%);
+}
+
+#questions-container {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  
+} 
+
+.input {
+  margin-top: 5vh;
+  height: 3.5vh;
+  width: 100%;
+  border-radius: 5px;
+  text-decoration: none;
+  border-color: rgb(0 0 0 / 20%);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 25vh;
+  font-weight: 700;
+}
+
+#ticketType {
+  padding: 6px 12px;
+  height: fit-content;
+  width: 100%;
+}
+
+#ticketTypeOptionsList {
+  list-style-type: none;
+}
+
+li {
+  margin-top: 2vh;
+}
+
+#inputOther {
+  margin-top: 2vh;
+  height: 5vh;
+  width: 100%;
+  margin-bottom: 2vh;
+  border-radius: 5px;
+  text-decoration: none;
+  border-color: rgb(0 0 0 / 20%);
+}
+
+/* 
+label[type="radio"]:active{
+
+  
+
+} */
+
+#yesPay {
+  border: none;
+  color: white;
+}
+#noPay {
+  border: none;
+  color: white;
+  margin-left: 2vw;
+}
+
+#pay {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5vh;
+}
+
+.paymentBtn:hover {
+  box-shadow: 0px 1px 5px rgb(0 0 0 / 20%);
+}
+
+#btnSubmit {
+  height: 6vh;
+  width: 9vw;
+  margin-top: 15vh;
+  border: 0.1px solid rgb(0 0 0 / 20%);
+  background-color: transparent;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#btnFind {
+  height: 6vh;
+  width: 9vw;
+  margin-top: 5vh;
+  border: 0.1px solid rgb(0 0 0 / 20%);
+  background-color: transparent;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 5vh;
+}

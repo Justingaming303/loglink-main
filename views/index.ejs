@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../public/style.css">
+
+        <title>Ticket Log</title>
+
+    </head>
+
+    <body>
+
+
+
+
+        <div id="questions-container">
+
+            <h1 class="heading">Customer Details</h1>
+            <div id="inputForm">
+
+                <div class="question-container">
+                    <label class="label" for="custUser">*Customer's Discord Username</label>
+                    <input class="input" id="custUser" type="text" name="text" required>
+                </div>
+                <!-- <button>Add</button> -->
+                <div class="question-container">
+                    <label class="label" for="custID">*Customer's Discord ID</label>
+                    <input class="input" id="custID" type="number" name="text" required>
+                </div>
+                <div class="question-container">
+                    <label class="label" for="assignedName">*Assigned Staff Name</label>
+                    <input class="input" id="assignedName" type="text" name="text" required>
+                </div>
+                <div class="question-container">
+                    <label class="label" for="assignedRank">*Assigned Staff Rank</label>
+                    <input class="input" id="assignedRank" type="text" name="text" required>
+                </div>
+                <div class="question-container">
+                    <label class="label" for="assignedID">*Assigned Staff ID</label>
+                    <input class="input" id="assignedID" type="text" name="text" required>
+                </div>
+                <div class="question-container">
+                    <label for="involvedStaff" class="label">Other Involved Staff Members</label>
+                    <input type="text" class="input" id="involvedStaff" required>
+                </div>
+                <br>
+                <h1 class="heading">Ticket Details</h1>
+                <br>
+                <div class="question-container">
+                    <label class="label" for="ticketNumber">*Ticket Number</label>
+                    <input class="input" id="ticketNumber" type="number" name="text" required>
+                </div>
+                <div class="question-container">
+                    <label class="label" for="ticketDate">*Ticket Date</label>
+                    <input class="input" id="ticketDate" type="date" name="text" required>
+                </div>
+
+
+                <div class="question-container" id="ticketType">
+                    <label class="label">*Ticket Type</label>
+                    <p>Choose One Of The Following</p>
+                    <br>
+
+                    <ul id="ticketTypeOptionsList">
+                        <li>
+                            <input type="radio" id="sales" name="type" value="Sales" required>
+                            <label for="hello">Sales</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="support" name="type" value="Support" required>
+                            <label for="hello">Support</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="report" name="type" value="Report" required>
+                            <label for="hello">Report</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="partner" name="type" value="Partner" required>
+                            <label for="partner">Partner / Ad</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="giveaway" name="type" value="Giveaway" required>
+                            <label for="giveaway">Giveaway Winner</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="staffapp" name="type" value="Staffapp" required>
+                            <label for="hello">Staff Application</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="other" name="type" value="Other" required>
+                            <label for="">Other:</label>
+                            <input type="text" id="inputOther">
+                        </li>
+
+
+
+
+                    </ul>
+
+                </div>
+
+                <div class="question-container">
+                    <label for="yes/no" class="label">*Was there payment involved?</label>
+
+                    <div id="pay">
+
+                        <input id="yesPay" class="paymentBtn" type="radio" name="payment" value="Yes">
+                        <label for="yesPay">Yes</label>
+                        <input id="noPay" class="paymentBtn" type="radio" name="payment" value="No">
+                        <label for="noPay">No</label>
+                    </div>
+
+                    <div>
+                        <button id="btnSubmit" type="submit">Submit</button>
+                    </div>
+                </div>
+                <div class="heading">
+                    <h1 id="heading">Tickets</h1>
+    
+                
+    
+                <div>
+                    
+                    <input type="text" name="ticketSearch" id="ticketSearchInput" class="input" placeholder="Search a ticket number..">
+                    <button id="btnFind" type="submit" style="justify-self: center;">Find Ticket</button>
+    
+    
+                </div>
+                </div>
+    
+                
+            </div>
+
+            <div id="ticket-container">
+    
+    
+    
+    
+            </div>
+        </div>
+
+
+
+
+
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script type="module" src="../public/script.js">
+        import findTicket from 'app.js';</script>
+
+
+
+
+</html>
